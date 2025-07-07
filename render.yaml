@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: youflow-agency-bot
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    pythonVersion: 3.11.8
+    autoDeploy: true
